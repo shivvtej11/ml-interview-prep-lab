@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: ml-interview-prep-lab
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
